@@ -1,153 +1,146 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('reset.css');
+@import url('typography.css');
 
 body {
     background: rgb(241, 241, 241);
-    width: 100%;
-    margin: 0 auto;
-    font-family: 'Roboto', sans-serif;
 }
 
-#main {
+.site {
     display: flex;
-}
-
-aside, main section {
-    background: white;
-    box-shadow: rgba(0, 0, 0, 0.2) 0 4px 10px 0, rgba(0, 0, 0, 0.19) 0 4px 20px 0;
-    margin: 2%;
+    max-width: 70rem;
+    margin: 0 auto;
 }
 
 aside {
-    width: 22%;
+    width: 25%;
+}
+
+aside .aside-title {
+    font-size: 1.2rem;
+}
+
+aside article, main section {
+   padding: 1rem;
 }
 
 aside img {
-    max-width: 100%;
+    display: block;
+    width: 100%;
     height: auto;
 }
 
-aside article p {
-    padding-left: 16px;
-    color: #757575;
-    padding-bottom: 5px;
-}
-
-aside article p i {
-    padding-right: 6px;
-    color: #009688;
-}
-
-main {
-    width: 65%;
-}
-
-hr {
-    width: 80%;
-    border: 0;
-    border-top: 1px solid #eee;
-}
-
-.aside-title {
-    color: #757575;
-    padding-left: 15px;
-    font-weight: 300;
+aside .languages p,
+aside .skills p {
+    padding-top: 1rem;
 }
 
 .progress-bar {
-    margin: 0 15px;
     background: #f1f1f1;
-    border-radius: 16px;
+    border-radius: 0.8rem;
     color: white;
     text-align: center;
 }
 
 .inner-progress-bar {
-    border-radius: 16px;
+    border-radius: 0.8rem;
     background: #009688;
 }
 
-#languages {
-    padding-bottom: 25px;
+section .far,
+section .fas,
+article .fas  {
+    color: #009688;
+}
+
+main {
+    width: 75%;
+}
+
+aside, main section {
+    background: white;
+    margin:  1rem;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 4px 10px 0, rgba(0, 0, 0, 0.19) 0 4px 20px 0;
+
+}
+
+article.school {
+    border: 2px solid #009688;
+    margin-bottom: 0.5rem;
+    padding: 1rem;
+}
+
+article.school h4 {
+    text-align: center;
+}
+
+.school .description img {
+    max-width: 6rem;
+    float: left;
+    padding: 1rem;
+    background-color: rgba(241, 241, 241, .4);
+    border-radius: 0.8rem;
+}
+
+article.job-article h4 {
+    font-style: italic;
+    font-size: 1rem;
+}
+
+h2,h3, h4 {
+    color: #757575;
 }
 
 footer {
+    text-align: center;
+    color: white;
     background: #009688;
-    color: white;
-    text-align: center;
-    display: block;
-    padding: 15px;
+    padding: 1rem 1rem 0 1rem;
 }
 
-footer p {
-    margin-top: 15px;
-    margin-bottom: 0;
+footer .social-icons i  {
+    padding-right: 0.5rem;
 }
 
-#social-icons i {
-    color: white;
-    margin: 5px;
+@media screen and ( max-width:800px ) {
+    .site {
+    flex-wrap: wrap;
+    }
+
+    aside {
+    width: 100%;
+    }
+
+    main {
+    width: 100%;
+    }
+
+    aside img {
+    display: flex;
+    padding: 1rem;
+    margin: 0 auto;
+    }
+
+    .school .description img {
+    display: flex;
+    max-width: 10rem;
+    float: none;
+    margin: 0 auto;
+    padding: 2rem;
+    background: none;
+   }
 }
 
-#work,#education {
-    margin-top: 3.2%;
-    padding: 14px 18px;
-    margin-bottom: 0;
-}
 
-#work h2, #education h2 {
-    color: #757575;
-    font-weight: 300;
-    font-size: 2em;
-}
 
-#work i, #education i {
-    color: #009688;
-    padding-right: 10px;
-}
 
-#work h4 {
-    color: #757575;
-    font-weight: normal;
-    font-style: italic;
-}
 
-#education h4 {
-    color: #757575;
-    font-weight: normal;
-    font-size: 25px;
-    text-align: center;
-    margin: 10px auto;
-}
 
-.school {
-    border: 1px solid rgb(0, 150, 136);
-    padding: 10px;
-    margin: 10px;
-    box-shadow: rgba(0, 0, 0, 0.2) 0 4px 10px 0, rgba(0, 0, 0, 0.19) 0 4px 20px 0;
-}
 
-.school div {
-    display: inline-block;
-    text-align: left;
-    color: #757575;
-    border-radius: 12px;
-}
 
-.school div p {
-    padding-top: 7px;
-}
 
-.uni-img-container {
-    width: 12%;
-    float: left;
-    margin-right: 15px;
-    background-color: rgba(241, 241, 241, .4);
-    padding: 15px;
-}
 
-.school div img {
-    max-width: 100%;
-    width: 90%;
-    height: 40%;
-    margin: 6%;
-}
+
+
+
+
+
